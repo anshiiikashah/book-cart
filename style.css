@@ -1,0 +1,329 @@
+@font-face {
+    font-family: font1;
+    src: url(Fonts/PlaywriteGBS-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(Fonts/BaskervvilleSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: font3;
+    src: url(Fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: font4;
+    src: url(Fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: font5;
+    src: url(Fonts/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: font6;
+    src: url(Fonts/JosefinSans-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: #A2D2FF;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* gap: 2vh; */
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    font-family: font4;
+    font-size: 200%;
+
+}
+
+#main {
+    display: flex;
+    gap: 10vh;
+    padding: 2vh;
+    justify-content: space-between;
+}
+
+#navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 17vh;
+    font-family: font5;
+    font-size: 134%;
+    margin: 2vh;
+}
+
+#navigation ul li {
+    cursor: pointer;
+    transition: all 0.2s linear;
+    padding: 0.5vh;
+}
+
+#navigation ul li:hover {
+background-color: white;
+border-radius: 2vh;
+transform:scale(1.1);
+}
+
+#logo img {
+    width: 5vh;
+    border-radius: 50%;
+}
+
+#imagetext {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20vh;
+}
+
+#quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31%;
+    font-family: font1;
+    font-size: 250%;
+    text-align: center;
+    background-image: url(assets/splash.svg);
+    background-size: 56vh 56vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 66vh;
+    padding: 2vh;
+}
+#search {
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+    gap: 2vh;
+    background-color: #bde0fe;
+
+}
+
+#searchBox,
+#dropdown select {
+    border-radius: 2vh;
+    border: none;
+    font-family: font4;
+    padding: 0.5vh;
+}
+
+#searchBox {
+    width: 60vh;
+    padding: 0.5vh 2vh;
+}
+#sideImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner{
+    display: flex;
+}
+
+#genre {
+    font-size: 120%;
+    font-family: font5;
+    cursor: pointer;
+    background-color: #ffafcc;
+    width:40vh;
+    height: 76.5vh;
+
+}
+
+#genreLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+    font-size: 120%;
+    
+}
+#genre ul{
+    list-style: none;
+    padding: 0;
+    border-bottom: 2px solid black;
+}
+#genre ul li{
+    border: 2px solid black;
+    border-bottom: none;
+    padding-left: 2vh;
+    padding: 2vh;
+}
+/* #banner{
+    display: none;
+} */
+#spanEl{
+    font-size: 150%;
+    font-family: font4;
+    
+}
+#spans{
+    padding: 10px;  
+}
+#searchOutcome{
+    padding: 7vh;
+    padding-left: 18vh;
+    display: flex;
+    gap:5vh;
+    flex-wrap: wrap;
+}
+.bookdiv{
+    border-radius: 2vh;
+    background-color: #bde0fe;
+    width: 16vw;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: font4;
+    transition: transform 0.2s linear;
+}
+.bookdiv:hover{
+    transform: scale(1.1);
+}
+
+.bookimg{
+width: 20vh;
+}
+.bookimg>img{
+    width: 100%;
+}
+.bookname{
+    font-size: 130%;
+    font-family: font6;
+    text-align: center;
+}
+.bookprice{
+    font-weight: bold;
+}
+.bdetails{
+    display: flex;
+    padding: 5vh;
+    gap:15vh;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap:2vh;
+    padding: 2vh;
+    font-family: font4;
+}
+.bname{
+    font-family:font6 ;
+    font-size: 250%;
+}
+.addOrBuy{
+    display: flex;
+    gap:2vh;
+    
+}
+.cartButton{
+    border-radius: 2vh;
+    border:2px solid black;
+    width: 20vh;
+    font-size: 120%;
+    font-family: font4;
+}
+.buyButton{
+    border-radius: 2vh;
+    border:2px solid black;
+    background-color:#cdb4db;
+    font-size: 120%;
+    width: 20vh;
+    font-family: font4;
+}
+.newView{
+    background-color: #bde0fe;
+    margin: 2vh;
+    padding-bottom:2vh ;
+    border-radius: 2vh;
+    width: 140vh;
+}
+.freeDelivery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+    font-size: 70%;
+}
+.freeDeliveryIcon{
+    width: 7vh;
+    height: 7vh;
+    border: 2px solid black; 
+    border-radius: 50%;
+}
+.returnEl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+    font-size: 70%;
+    text-align: center;
+}
+.returnImg{
+    width: 7vh;
+    height: 7vh;
+    border: 2px solid black; 
+    border-radius: 50%;
+}
+.bookFeatures{
+    display: flex;
+    gap:3vh;
+}
+.review{
+    display: flex;
+    gap:2vh;
+    margin-left: 4vh;
+    margin-bottom: 2vh;
+    font-family: font4;
+}
+.inputEl {
+    border-radius: 2vh;
+    border: 0.25vh solid rgba(0, 0, 0, 0.697);
+    padding: 1vh;
+    width: 33vh;
+}
+.submitEl{
+    border-radius: 2vh;
+    border: 0.25vh solid rgba(0, 0, 0, 0.697);
+    padding: 1vh;
+    width: 15vh;
+    background-color:#cdb4db;
+}
+.bimage{
+    height: 53vh;
+}
+#spans{
+    display: flex;
+}
+#spans img{
+    width: 4vh;
+}
+#spans img:hover{
+    transform:scale(1.1);
+}
+#backButton{
+    background-color: transparent;
+    border: none;
+}
